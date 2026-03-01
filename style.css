@@ -1,0 +1,720 @@
+
+
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    scroll-behavior: smooth;
+}
+
+html {
+    height:100%;
+}
+  
+  body {
+    margin:0;
+}
+  
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6cbbcf 50%, #d3e1e2 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+  
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+  
+.bg3 {
+    animation-duration:5s;
+}
+@keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+}
+/*section {
+    max-width: 85%;
+    padding: 60px 10%;
+    margin-bottom: 40px;
+    background: white;
+}*/
+
+section {
+    max-width: 75%;              /* largeur max de la carte */
+    margin: 40px auto;              /* centre la carte + espace haut/bas */
+    padding: 40px 60px;             /* espace intérieur */
+    background: #d8dbe2;
+    border-radius: 16px;            /* coins arrondis */
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);  /* léger relief */
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #111827;   /* barre horizontale */
+}
+
+/* HEADER */
+header {
+    background: #7FACB5;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    height: 75px;
+
+}
+
+/* NAVBAR STICKY */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #2f4050;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #7FACB5;
+}
+
+.navbar audio {
+    height: 24px;          /* plus petit */
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+.audio-toggle {
+    margin-left: 15px;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.audio-toggle:hover {
+    color: #7FACB5;
+    border-color: #7FACB5;
+    background: transparent;
+}
+
+.audio-volume {
+    width: 80px;
+    margin-left: 10px;
+    vertical-align: middle;
+    accent-color: #555;
+    transition: accent-color 0.2s;
+}
+
+.audio-volume:hover {
+    accent-color: #7FACB5;
+}
+
+
+/* PROFILE */
+.profile {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Centres d'intérêt - carte avec animation */
+/* Cartes infos dans la présentation */
+.presentation-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 28px;
+}
+
+/* Style commun des cartes */
+.info-card {
+    max-width: 360px;
+    min-height: 230px;
+    padding: 20px 24px;
+    border-radius: 12px;
+    border-top: 5px solid #4e747ce8;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+    animation: interestsAppear 0.6s ease-out;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(127, 172, 181, 0.2);
+}
+
+.info-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.1rem;
+    color: #2f4050;
+}
+
+.info-card ul {
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    line-height: 1.6;
+    color: #374151;
+}
+
+/* Option : légère variation de couleur entre les deux cartes */
+.strengths-card {
+    background: #7facb559;
+    border-color: #7FACB5;
+}
+
+.interests-card {
+    background: #7facb559;
+    border-color: #7FACB5;
+    
+}
+
+/* Bloc carte centres d'intérêt + images à droite */
+.interests-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.interests-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.interests-gallery {
+    flex-direction: column;
+    align-content: flex-start;
+    max-height: 300px;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.gallery-caption {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #2f4050;
+    text-align: center;
+}
+
+.interests-gallery img {
+    border-top: 5px solid #5a8791d3;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.interests-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Lightbox : image agrandie au clic */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.lightbox.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-img {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.lightbox-caption {
+    padding: 8px 16px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 8px;
+    max-width: 90vw;
+    text-align: center;
+}
+
+.lightbox-caption:empty {
+    display: none;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.lightbox-close:hover {
+    background: #7FACB5;
+    color: #fff;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s, color 0.2s;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: #7FACB5;
+    color: #fff;
+}
+
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+
+.lightbox-counter {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 14px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 20px;
+}
+
+@keyframes interestsAppear {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* CV BOX */
+.cv-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cv-box a {
+    display: inline-block;
+    padding: 15px 25px;
+    border: 2px solid #7FACB5;
+    border-radius: 8px;
+    background: #7FACB5;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+    margin: 0 6px;
+}
+
+.cv-box a:hover {
+    background: white;
+    color: #7FACB5;
+}
+
+
+/* section cursus*/
+#cursus {
+    /*padding: 60px 10%;   /* comme les autres sections */
+    /*margin-bottom: 40px;*/
+    /*max-width: 100%;*/
+    /*margin: 40px max(0.5rem, 1%);   /* même marge horizontale que les autres */
+    padding: 40px 60px;
+
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+#cursus h2 {
+    text-align: left;    /* aligné à gauche, mais avec le padding de 10% */
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #111827;
+}
+
+/* Timeline centrée + léger scroll horizontal si besoin */
+.cursus-timeline {
+    position: relative;
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: visible;
+    padding: 0 1rem 0.5rem 2.1rem;  /* espace à gauche pour barre + points */
+}
+
+/* Ligne verticale alignée sur les points, à l'intérieur du padding */
+.cursus-timeline::before {
+    content: "";
+    position: absolute;
+    left: 1rem;                /* 0 à l’intérieur du padding-left */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #4f46e5, #22c55e);
+    opacity: 0.4;
+}
+
+/* Un élément de cursus = date + content (court) + desc (long) */
+.cursus-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-left: 2.5rem;     /* espace entre la ligne et les cartes */
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0.8rem;            /* cartes plus proches pour que la flèche chevauche */
+    flex-wrap: wrap;
+    min-width: 0;
+}
+
+/* Point de la timeline (ne sera plus coupé) */
+.cursus-item::before {
+    content: "";
+    position: absolute;
+    left: -1.5rem;            /* pile sur la ligne (left:0 + padding-left:3rem - 2rem) */
+    top: 8px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #2f4050;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.2);
+}
+
+/* Date (colonne 1) */
+.cursus-date {
+    flex: 0 0 120px;        /* largeur fixe */
+    font-weight: 600;
+    color: #2f4050;
+    font-size: 0.9rem;
+}
+
+/* Carte principale plus courte (colonne 2) */
+.cursus-content {
+    flex: 0 0 220px;        /* plus courte */
+    background: #7FACB5;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    position: relative;     /* pour la flèche */
+    z-index: 1;
+}
+
+.cursus-content h3 {
+    color: #2f4050;
+}
+
+/* Carte description plus longue (colonne 3) */
+.cursus-desc {
+    flex: 1 1 0;            /* occupe tout l’espace restant -> plus longue */
+    min-width: 260px;
+    background: #7FACB5;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    position: relative;
+    font-size: 0.9rem;
+    color: #e5e7eb;
+    z-index: 1;
+}
+
+/* Trait entre content et desc qui se superpose légèrement aux deux cartes */
+/*.cursus-content::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -1.5rem;         
+    width: 1.8rem;          
+    height: 30%;
+    background: #7FACB5;
+    transform: translateY(-50%);
+    z-index: 2;
+}*/
+
+/* Petite pointe qui ressort de la carte desc vers la gauche */
+.cursus-desc::before {
+    content: "";
+    position: absolute;
+    left: -0.4rem;          /* petite pointe qui mord légèrement dans la carte */
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent #7FACB5 transparent transparent;
+    z-index: 3;
+}
+/* Titres / textes dans les cartes */
+.cursus-content h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1rem;
+}
+
+.cursus-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #e5e7eb;
+}
+
+/* LYCEE IMAGE + galerie + carte */
+.lycee-img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 550px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.etablissement-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.etablissement-description {
+    flex: 1;
+    min-width: 0;
+}
+
+.etablissement-media {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.etablissement-galleries {
+    display: flex;
+    flex-direction: column; /* empile les 2 galeries verticalement */
+    gap: 12px;
+}
+
+.etablissement-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.etablissement-gallery img {
+    border-top: 5px solid #5a8791d3;
+    width: 118px;
+    height: 118px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.etablissement-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* GOOGLE MAP */
+.map-container iframe {
+    width: 400px;
+    max-width: 100%;
+    height: 260px;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 0;
+}
+
+
+
+/* OPTIONS */
+.options-container {
+    display: flex;
+    gap: 30px;
+}
+
+.option-box {
+    border-top: 5px solid #4e747ce8;
+    background: #7facb559;
+    border-color: #7FACB5;
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+}
+
+/*.sisr {
+    background: #e3f2fd;
+}
+
+.slam {
+    background: #fce4ec;
+}*/
+
+.option-box:hover {
+    transform: translateY(-5px);
+}
+
+/* MISSIONS */
+.missions-trimestre {
+    margin-top: 25px;
+}
+
+.missions-trimestre h3 {
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+}
+
+.mission-card {
+    background: #a8bcd1;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 5px solid #7FACB5;
+    border-top: 5px solid #7FACB5;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+}
+
+.mission-card:hover {
+    transform: scale(1.02);
+}
+
+/* ANIMATION */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+/* STAGES */
+.stages-annee {
+    margin-top: 25px;
+}
+
+.stages-annee h3 {
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+}
+
+.stages-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stage-card {
+    background: #a8bcd1;
+    padding: 20px;
+    margin-top: 10px;
+    border-bottom: 5px solid #7FACB5;
+    border-right: 5px solid #7FACB5;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+}
+
+.stage-card:hover {
+    transform: scale(1.02);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* FOOTER */
+footer {
+    text-align: left;
+    padding: 20px;
+    background: #7FACB5;
+    color: white;
+}
+

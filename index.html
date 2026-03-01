@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>DE MACEDO Bastien - BTS SIO SISR</title>
+    <link rel="icon" href="images/icon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+<header>
+    <h1>DE MACEDO Bastien</h1>
+    <p>BTS SIO - Option SISR</p>
+</header>
+
+<!-- MENU STICKY -->
+<nav class="navbar">
+    <a href="#presentation">Présentation</a>
+    <a href="#cursus">Cursus</a>
+    <a href="#etablissement">Établissement</a>
+    <a href="#formation">Formation</a>
+    <a href="#missions">Missions</a>
+    <a href="#stages">Stages</a>
+    <a href="#veille">Veille</a>
+    <a href="#contact">Contact</a>
+    <!--<audio src="audio/Local Forecast.mp3" controls></audio>-->
+    <audio id="bg-audio" src="audio/Local Forecast.mp3" loop></audio>
+    <button id="audio-toggle" class="audio-toggle" aria-label="Lecture / pause">▶</button>
+    <input
+    type="range"
+    id="audio-volume"
+    class="audio-volume"
+    min="0"
+    max="1"
+    step="0.01"
+    value="0.2"
+    />
+</nav>
+
+<!-- PRESENTATION -->
+<section id="presentation" class="fade-in">
+    <h2>Présentation</h2>
+
+    <p>Bienvenu(e) sur mon portfolio.</p> 
+        
+    <p>Je me présente, je suis Bastien DE MACEDO, 18 ans et actuellement étudiant en BTS SIO option SISR au lycée général et technologique Albert Londres, je suis passionné par l'informatique et plus particulièrement sa dimension matérielle encourageant au bricolage/bidouillage mais également le côté historique
+        de la chose ainsi que les dernières technologies. Je possède également une affinité pour l'automobile et les animaux.
+    </p>
+
+    <div class="presentation-cards">
+        <div class="info-card strengths-card">
+            <h3>Points forts</h3>
+            <ul>
+                <li>Asiduité</li>
+                <li>Capacité d'adaptation</li>
+                <li>Curiosité</li>
+                <li>Souci du détail</li>
+                <li>Autonomie</li>
+            </ul>
+        </div>
+
+        <div class="interests-block">
+            <div class="info-card interests-card">
+                <h3>Centres d'intérêt</h3>
+                <ul>
+                    <li>Informatique (De son histoire aux dernières technologies)</li>
+                    <li>Réalisation de projets personnels/bricolage (Modding, NAS/Serveur, réparation...)</li>
+                    <li>Automobile (<a href="https://fr.wikipedia.org/wiki/Smart_Fortwo#Smart_Fortwo_II">Bolide actuel</a>)</li>
+                    <li>Animaux</li>
+                </ul>
+            </div>
+            <div class="interests-gallery">
+                <div class="gallery-item">
+                    <img src="images/chip.png" title="Projets" class="gallery-img" data-gallery='["images/AMD-BC250.jpg","images/AMD-BC250-fan.jpg","images/AMD-BC250-fans.jpg","images/Bazzite-BC250.jpg","images/Tests-BC250.jpg","images/Nvidia-tesla-P4.jpg","images/server.jpg","images/server2.jpg","images/Macbook-air.jpg","images/Macbook-pro.jpg"]' data-gallery-titles='["AMD BC-250 / APU de la PS5 / 6c/12t / 16Go GDDR6 / 24cu GPU","AMD BC-250 avec un ventilateur","AMD BC-250 avec des ventilateurs","Bazzite sur BC-250","Tests de performances AMD BC-250 / performances similaires à un Ryzen 5 1600X/2600X et RX6600 ou GTX 1660","Nvidia Tesla P4 / 8Go GDDR5","Petit serveur AMD FX-4100 8Go / Nvidia Tesla P4 8Go / Radeon HD7790 1Go","Serveur","MacBook Air","MacBook Pro"]'>
+                    <!--<span class="gallery-caption">Projets</span>-->
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ford-probe.png" title="Automobile" class="gallery-img" data-gallery='["images/ford-probe.png","images/Honda-S660.png","images/auto3.png"]' data-gallery-titles='["Ford Probe","Honda S660","Auto 3"]'>
+                    <!--<span class="gallery-caption">Automobile</span>-->
+                </div>
+                <div class="gallery-item">
+                    <img src="images/chien.jpg" title="Animaux" class="gallery-img" data-gallery='["images/chien.jpg","images/chien2.jpg","images/chien3.jpg","images/chien4.jpg"]'>
+                    <!--<span class="gallery-caption">Animaux</span>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOITE CV -->
+    <div class="cv-box">
+        <a href="documents/CV.pdf" target="_blank">Télécharger mon CV</a>
+    </div>
+</section>
+
+<!-- CURSUS -->
+<section id="cursus" class="fade-in">
+    <h2>Mon cursus</h2>
+
+    <div class="cursus-timeline">
+        <article class="cursus-item">
+            <div class="cursus-date">2025 – 2026</div>
+            <div class="cursus-content">
+                <h3>Première année BTS SIO Option SISR</h3>
+                <p>Lycée Albert Londres</p>
+            </div>
+            <div class="cursus-desc">
+                <p>Introduction aux sciences réseau, cybersécurité et programmation puis Approfondissement de l'apprentissage des réseaux et cybersécurité.</p>
+            </div>
+        </article>
+
+        <article class="cursus-item">
+            <div class="cursus-date">2023 – 2025</div>
+            <div class="cursus-content">
+                <h3>Terminale puis Baccalauréat STMG spécialité SIG</h3>
+                <p>Lycée Albert Londres</p>
+            </div>
+            <div class="cursus-desc">
+                <p>Suite de la formation STMG sans changement majeur à l'exception de la spécialité Systèmes d'information et de gestion (SIG) qui m'a 
+                    permis de mettre un pied dans l'informatique en entreprise (organisation, numérisation, mise en conformité, CNIL, RGPD, analyse décisionnelle...)</p>
+            </div>
+        </article>
+
+        <article class="cursus-item">
+            <div class="cursus-date">2023 – 2024</div>
+            <div class="cursus-content">
+                <h3>Première STMG</h3>
+                <p>Lycée Albert Londres</p>
+            </div>
+            <div class="cursus-desc">
+                <p>Cette formation m'a permis de  découvrir les sciences économiques, légales, managériales et de gestion ce qui malgré la déconnexion avec l'informatique, m'a également permis 
+                    de me familiariser avec des concepts cruciaux du monde du travail.</p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- ETABLISSEMENT -->
+<section id="etablissement" class="fade-in">
+    <h2>Mon établissement scolaire</h2>
+
+    <!-- Image principale -->
+    <img src="images/entree.jpg" class="lycee-img" alt="Entrée du Lycée Albert Londres">
+
+    <div class="etablissement-content">
+        <div class="etablissement-description">
+            <p>Le Lycée Albert Londres, situé à Cusset dans l’Allier, est un établissement public reconnu pour la diversité et la qualité de ses formations, allant de la voie générale et technologique ou 
+               professionelle à l’enseignement supérieur.</p> 
+            <p>Il propose notamment le BTS Services Informatiques aux Organisations (SIO), formation professionnalisante orientée vers les métiers de l’informatique. </p>
+        </div>
+        <div class="etablissement-media">
+
+        <!-- Galeries photos de l'établissement -->
+        <div class="etablissement-galleries">
+            <div class="etablissement-gallery">
+                <div class="gallery-item">
+                    <img src="images/LYCEE/Entrée_principale_photo2.jpg" title="Lycée Albert Londres" class="gallery-img" data-gallery='["images/LYCEE/Entrée_principale_photo2.jpg","images/LYCEE/Cantine_1.jpg","images/LYCEE/Internat.jpg","images/LYCEE/terrains_de_basket_3.jpg","images/LYCEE/verdure_1.jpg","images/LYCEE/lycee-neige.jpg","images/LYCEE/lycee-neige2.jpg","images/LYCEE/lycee-neige3.jpg"]' data-gallery-titles='["Entrée du lycée","Réfectoire","Internat","Terrain de basket","large superficie d espaces verts"]'>
+                </div>
+            </div>
+
+            <div class="etablissement-gallery">
+                <div class="gallery-item">
+                    <img src="images/BTS-SIO/A212/A212_1.jpg" title="Salles BTS SIO" class="gallery-img" data-gallery='["images/BTS-SIO/A207/A207_2.jpg","images/BTS-SIO/A212/A212_1.jpg","images/BTS-SIO/A214/A214_1.jpg","images/BTS-SIO/A214/A214_2.jpg","images/BTS-SIO/A214/ARMOIRES_A214.jpg","images/BTS-SIO/A214/Armoire_srv1.jpg","images/BTS-SIO/A214/CLASSE_MOBILE_CISCO.jpg","images/BTS-SIO/SALLE-SERVEURS/CerbereIIphoto2.png","images/BTS-SIO/SALLE-SERVEURS/commutateurs_salles_SIO.png"]' data-gallery-titles='["Salle A207","Salle A212","Salle A214","Salle A214","Armoires présentes en salle A214","Une autre armoire","Classe mobile Cisco","Une armoire de la salle serveurs","Commutateurs salles SIO"]'>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Maps -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps?q=Lycée+Albert+Londres+Cusset&output=embed"
+                loading="lazy">
+            </iframe>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- FORMATION -->
+<section id="formation" class="fade-in">
+    <h2>Le BTS SIO</h2>
+
+    <p>
+        Le BTS Services Informatiques aux Organisations (SIO) est un diplôme national de niveau Bac +2 qui forme des professionnels capables de répondre aux besoins informatiques des entreprises 
+        et des organisations publiques.
+    </p>
+
+    <p>
+        Cette formation professionnalisante prépare les étudiants à concevoir, déployer, maintenir et sécuriser des solutions informatiques adaptées aux besoins des utilisateurs.
+        contrairement à d'autres formations, le BTS SIO introduit ses étudiants à la science des réseaux et la programmation de manière égale durant le premier trimestre, leur permettant 
+        donc de se faire une opinion sur ces sujets tandis que la cybersécurité est présente cette fois dans les deux sujets mais implémenté de façon adaptée à chacune.
+    </p>
+
+    <div class="options-container">
+
+        <div class="option-box sisr">
+            <h3>SISR (choisie)</h3>
+            <ul>
+                <li>Administration Windows / Linux</li>
+                <li>Gestion réseaux</li>
+                <li>Virtualisation et déploiement</li>
+                <li>Cybersécurité (Protection d'infrastructure)</li>
+                <li>Support technique et gestion des incidents</li>
+            </ul>
+        </div>
+
+        <div class="option-box slam">
+            <h3>SLAM</h3>
+            <ul>
+                <li>Développement Web</li>
+                <li>Applications métiers</li>
+                <li>Gestion et exploitation de Bases de données</li>
+                <li>Cybersécurité (Sécurisation des applications)</li>
+                <li>Programmation</li>
+            </ul>
+        </div>
+    </div>
+
+    <p>Le BTS SIO du lycée Albert Londres présente également quelques particularités :</p>
+    <ul>
+        <li>Des enseignants à l'écoute des étudiants</li>
+        <li>Un encadrement et accompagnement vers la professionnalisation bien supérieur à d'autres formations (les étudiants ne seront jamais livrés à eux mêmes)</li>
+        <li>La présence de salles et serveurs spécialisées et réservées au étudiants suivant cette formation, permettant un suivi de la formation dans un cadre/environnement stable, éfficace et moins contraignant</li>
+        <li>La présence d'équipement, matériel et logiciels performant en abondance, participant à la qualité de la formation.</li>
+    </ul>
+
+    <!-- Bouton téléchargement plaquette BTS SIO -->
+    <div class="cv-box">
+        <a href="documents/BTS_SIO_2025v3.pdf.pdf" target="_blank">Télécharger le programme global BTS SIO</a>
+        <a href="documents/Prog_BTS_SIO_SISR.pdf" target="_blank">Télécharger le programme BTS SIO option SISR</a>
+    </div>
+
+    <h3>Pourquoi ce choix</h3>
+    <p>
+        Vous pouvez imaginer que des connaissances acquises en autodidactie sur le matériel informatique ne suffis pas à la création d'une carrière. Par conséquent, le BTS SIO représentait pour moi
+        l'opportunité d'étendre connaissances/compétences ainsi que de sortir de ma zone de confort en découvrant les sciences réseaux, de la cybersécurité et la programmation.
+    </p>
+
+</section>
+
+<!-- MISSIONS -->
+<section id="missions" class="fade-in">
+    <h2>Missions professionnelles</h2>
+
+    <div class="missions-trimestre">
+        <h3>1er trimestre</h3>
+
+        <div class="mission-card">
+            <h4>Recherches métiers / Rédaction CV / Mail motivé / Entretien</h4>
+            <p><strong>Contexte :</strong></p>
+            <p>Liens des métiers de l'informatique, rédaction d'un CV professionnel et mail motivé, passage d'une simulation d'entretien et passage à l'oral/présentation d'une diaporama de présentation individuel (avec les objectifs professionnels)</p>
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+                <li>Organisation de son développement professionnel</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <p>
+                Le côté simulation d'entretien et présentation du diaporame m'a permis d'améliorer ma capacité à m'éxprimer avec aisance à l'oral tandis que le côté rédaction du CV, mail motivé et du diaporama de renforcer mes compétences rédactionnelles ce qui est toujours appréciable.
+            </p>
+        </div>
+
+        <div class="mission-card">
+            <h4>Réponse à un appel d'offres - Renouvellement d'un parc informatique</h4>
+            <p><strong>Contexte :</strong></p>
+            <p>
+                En tant que salarié de l'entreprise IT Partner, vous êtes chargés de la proposition de configurations fixes et portables pour le 
+                renouvellement du parc informatique des salles du BTS SIO au lycée Albert Londres. Seront attendus de vous un devis comprenant les formules requises (calcul TVA, quantitées...) ainsi qu'une lettre 
+                explicative justifiant les choix techniques réalisés. Tout cela envoyé au destinataire par un mail professionellement rédigé.
+            </p>
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+                <li>Gérer le patrimoine informatique</li>
+                <li>Répondre aux incidents et aux demandes d'assistance et d'évolution</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <p>Mon affinité pour la dimension matérielle de l'informatique a rendu cette mission plus simple et je dirais même amusante en essayant de peser le pour et le contre de chaque composant,
+               choisir ceux ayant un rapport perfomance/prix le plus rentable. Cette dernière m'a cependant permis d'avoir une gestion du temps maitrisée pour les missions qui ont suivies.
+            </p>
+        </div>
+
+        <div class="mission-card">
+            <h4>Mise en place d'un réseau poste à poste</h4>
+            <p><strong>Contexte :</strong></p>
+            <p>
+                Encore une fois membre de l'équipe d'IT Partner, vous êtes cette fois chargés de la mise en place d'une service d'authentification dans la base SAM 
+                , de la gestion des utilisateurs/groupes avec les permissions associées, des fichiers et partage sous Windows 10 ainsi que de la rédaction d'une documentation technique (tutoriel) 
+                retraçant les étapes de ce processus de façon détaillée, professionelle et simple à comprendre permettant de reproduire les manipulations effectuées.
+            </p>
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+                <li>Gérer le patrimoine informatique</li>
+                <li>Mettre à disposition des utilisateurs un service informatique</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <ul>
+                <li>Cette mission m'a permis de comprendre le fonctionnement des permissions NTFS et du partage de fichiers/dossiers sous Windows sans oublier l'introduction à la rédaction
+                    de documentation, chose que je n'avais jamais fait auparavant. Cela m'a donc contraint à trouver une approche éfficace (effectuer une manipulation puis je documente et je recommence pour la manipulation suivante).
+                </li>
+            </ul>
+        </div>
+
+        <div class="mission-card">
+            <h4>Réponse à un appel d'offres - Préparation d'une mise en réseau d'une salle</h4>
+            <p><strong>Contexte :</strong></p>
+            <p>
+                Ici, en tant que membre de l'équipe d'IT Partner, vous êtes chargés dans le cadre de la réponse à un autre appel d'offres de la réalisation d'un
+                plan Microsoft Visio d'agancement d'une salle du BTS SIO (tables, postes, prises électriques/réseau, colonnes/goulottes...). Il sera ensuite nécéssaire d'établir un
+                devis comprenant les produits nécéssaires au cablage réseau de ladite salle également reliée à l'armoire de la salle server située à l'autre bout du couloir ainsi qu'une lettre justifiant encore une fois les choix réalisés. 
+
+            </p>
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+                <li>Gérer le patrimoine informatique</li>
+                <li>Répondre aux incidents et aux demandes d'assistance et d'évolution</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <ul>
+                <li>
+                    La création du plan Visio n'était pas compliqué, le défi se situait plutôt autours des mesures, estimation des distances et choix de bobines de cables de longueur
+                    idéale afin d'éviter les pertes le plus possible. Globalement, cette mission m'a permis d'aiguiser ma capacité prendre des décisions éclairées et rentables mais
+                    aussi de mieux visualiser/imaginer un plan en 3 dimensions (notament pour le passage des cables).
+                </li>
+            </ul>
+        </div>
+
+        <div class="mission-card">
+            <h4>Conception, hébergement puis référencement d'un site web</h4>
+            <p><strong>Contexte :</strong></p>
+            <p>Ici, il vous faudra développer un site web "vitrine" autour d'un centre d'intérêt et/ou organisation (l'utilisation de CMS étant proscrite). Ensuite, il faudra comparer, choisir et justifier votre choix d'un hébergeur. Enfin, vous devrez également
+                éffectuer les manipulations/procédures nécéssaires afin de référencer votre site web ainsi que rédiger une note expliquant ces manipulations.   
+            </p>
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+                <li>Développer la présence en ligne de l'organisation</li>
+                <li>Travailler en mode projet</li>
+                <li>Mettre à disposition des utilisateurs un service informatique</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <ul>
+                <li>Cette mission à été étonamment amusante ainsi qu'enrichissante. En effet, mon apréhension concernant la programmation/développement m'a fait croire que cette mission
+                    serait assez compliquée et que le produit final serait très basique. En réalité la prise en main de l'HTML/CSS était assez simple. Cela m'a encouragé à implémenter des fonctionnalités et éléments visuel
+                    plus complexes. Au final, j'ai réussit à créer un produit dont je pouvais être un peu fier malgré mon apréhension.
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="missions-trimestre">
+        <h3>2ᵉ trimestre</h3>
+
+        <div class="mission-card">
+            <h4>Création d'un portfolio</h4>
+            <p><strong>Contexte :</strong></p>
+            <p>
+                Analyse des objectifs, organisation du portfolio sur son fond et sa forme avec une synthèse des missions réalisées. Des mises à jour du portfolio
+                devrons êtres effectuées par la suite (nouvelles missions et stages).
+            </p>
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+                <li>Organiser son développement professionnel</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <ul>
+                <li>
+                    N'ayant jamais réalisé de portfolio auparavant et disposant d'une libertée technique complète (usage de CMS et IA autorisées), cette Mission laisse place à l'imagination
+                    de façon plus prononcée que pour celle concernant la conception d'un site web. Cela a contribué à rendre cette mission encore une fois amusante  
+                </li>
+            </ul>
+        </div>
+
+        <div class="mission-card">
+            <h4>Clé YUMI et gestionnaire de mots de passe</h4>
+            <p><strong>Contexte :</strong></p>
+            <p>
+                Cette fois, vous serez chargés en tant que membre de l'équipe d'IT Partner de la comparaison de plusieurs gestionnaires de mots de passe afin de choisir le meilleur
+                d'entre eux. Cette comparaison prendra la forme d'un document au format texte et sera accompagnée d'un diaporama le résumant. Ensuite, vous devrez également créer
+                un support amorçable YUMI permettant de démarrer divers outils et systèmes d'exploitation dit "Live" conformément aux critères données (distribution linux Live, utilitaire de 
+                clonage et partition, testeur de mémoire vive, antivirus Live, proposition d'installation Windows...). Il faudra bien évidemment rédiger
+                une documentation permettant à n'importe quel utilisateur de créer un support amorçable YUMI.
+            </p>
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+                <li>Mettre à disposition des utilisateurs un service informatique</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <ul>
+                <li>
+                    A déterminer...
+                </li>
+            </ul>
+        </div>
+
+        <div class="mission-card">
+            <h4>Refonte réseau Brocker'info (A déterminer)</h4>
+            <p><strong>Contexte :</strong></p>
+            <p>...
+            </p>
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+                <li>Gérer le patrimoine informatique</li>
+                <li>Répondre aux incidents et aux demandes d'assistance et d'évolution</li>
+                <li>Travailler en mode projet</li>
+                <li>Mettre à disposition des utilisateurs un service informatique</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <ul>
+                <li>
+                    A déterminer...
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- stages -->
+<!-- STAGES -->
+<section id="stages" class="fade-in">
+    <h2>Stages</h2>
+
+    <!-- 1ʳᵉ année -->
+    <div class="stages-annee">
+        <h3>1ʳᵉ année de BTS SIO</h3>
+
+        <div class="stage-card">
+            <h4>Stage à déterminer</h4>
+            <p><strong>Entreprise :</strong> ...</p>
+            <p><strong>Missions affectées :</strong></p>
+            <ul>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <ul>
+                <li>...</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- 2ᵉ année -->
+    <div class="stages-annee">
+        <h3>2ᵉ année de BTS SIO</h3>
+
+        <div class="stage-card">
+            <h4>Stage à déterminer</h4>
+            <p><strong>Entreprise :</strong> ...</p>
+            <p><strong>Missions affectées :</strong></p>
+            <ul>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <ul>
+                <li>...</li>
+            </ul>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- VEILLE -->
+<section id="veille" class="fade-in">
+    <h2>Veille technologique</h2>
+    <p>A déterminer...</p>
+
+    <h3>Définition et objectifs</h3>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p>Email : BDM.workpro@gmail.com</p>
+    <p>Téléphone : 07 83 29 96 91</p>
+</section>
+
+<footer>
+    © 2026 - DE MACEDO Bastien - Usage non commercial de « Local Forecast » par Kevin MacLeod sous licence <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons: By Attribution 3.0 License</a> - <a href="https://incompetech.com/">Site de la musique : incompetech.com</a>
+</footer>
+
+<!-- Lightbox : galerie par thème avec prev/next -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Fermer">×</button>
+    <button class="lightbox-prev" aria-label="Image précédente">‹</button>
+    <div class="lightbox-content">
+        <img src="" alt="" class="lightbox-img">
+        <div class="lightbox-caption"></div>
+    </div>
+    <button class="lightbox-next" aria-label="Image suivante">›</button>
+    <div class="lightbox-counter"></div>
+</div>
+
+<script>
+    const audio = document.getElementById('bg-audio');
+    const btn = document.getElementById('audio-toggle');
+    const volumeSlider = document.getElementById('audio-volume');
+    let playing = false;
+
+    // Volume initial (basé sur la valeur du slider)
+    audio.volume = parseFloat(volumeSlider.value || '0.2');
+
+    btn.addEventListener('click', () => {
+        if (!playing) {
+            audio.play();
+            playing = true;
+            btn.textContent = '⏸';
+        } else {
+            audio.pause();
+            playing = false;
+            btn.textContent = '▶';
+        }
+    });
+
+    volumeSlider.addEventListener('input', () => {
+        audio.volume = parseFloat(volumeSlider.value);
+    });
+
+    // Lightbox galerie par thème : clic ouvre la galerie d'images du même thème
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('.lightbox-img');
+    const lightboxClose = lightbox.querySelector('.lightbox-close');
+    const lightboxPrev = lightbox.querySelector('.lightbox-prev');
+    const lightboxNext = lightbox.querySelector('.lightbox-next');
+    const lightboxCounter = lightbox.querySelector('.lightbox-counter');
+
+    let currentGallery = [];
+    let currentTitles = [];
+    let currentIndex = 0;
+    const themeAlt = {};
+
+    function showLightboxImage(index) {
+        if (currentGallery.length === 0) return;
+        currentIndex = (index + currentGallery.length) % currentGallery.length;
+        lightboxImg.src = currentGallery[currentIndex];
+        lightboxImg.alt = themeAlt[currentGallery[currentIndex]] || currentTitles[currentIndex] || 'Image';
+        const captionEl = lightbox.querySelector('.lightbox-caption');
+        captionEl.textContent = currentTitles[currentIndex] || themeAlt[currentGallery[currentIndex]] || '';
+        lightboxCounter.textContent = currentGallery.length > 1
+            ? (currentIndex + 1) + ' / ' + currentGallery.length
+            : '';
+        lightboxPrev.style.display = currentGallery.length > 1 ? 'flex' : 'none';
+        lightboxNext.style.display = currentGallery.length > 1 ? 'flex' : 'none';
+    }
+
+    function initGallery(selector) {
+        document.querySelectorAll(selector).forEach((img) => {
+        img.addEventListener('click', () => {
+            try {
+                currentGallery = JSON.parse(img.getAttribute('data-gallery') || '[]');
+                currentTitles = [];
+                try {
+                    currentTitles = JSON.parse(img.getAttribute('data-gallery-titles') || '[]');
+                } catch (e) {}
+                while (currentTitles.length < currentGallery.length) {
+                    currentTitles.push('');
+                }
+            } catch (e) {
+                currentGallery = [img.src];
+                currentTitles = [img.alt || ''];
+            }
+            if (currentGallery.length === 0) {
+                currentGallery = [img.src];
+                currentTitles = [img.alt || ''];
+            }
+            themeAlt[img.src] = img.alt;
+            currentIndex = currentGallery.indexOf(img.src);
+            if (currentIndex < 0) currentIndex = 0;
+            showLightboxImage(currentIndex);
+            lightbox.classList.add('open');
+            lightbox.setAttribute('aria-hidden', 'false');
+        });
+    });
+    }
+    initGallery('.interests-gallery .gallery-img');
+    initGallery('.etablissement-gallery .gallery-img');
+
+    lightboxPrev.addEventListener('click', (e) => {
+        e.stopPropagation();
+        showLightboxImage(currentIndex - 1);
+    });
+    lightboxNext.addEventListener('click', (e) => {
+        e.stopPropagation();
+        showLightboxImage(currentIndex + 1);
+    });
+    lightboxImg.addEventListener('click', (e) => e.stopPropagation());
+
+    function closeLightbox() {
+        lightbox.classList.remove('open');
+        lightbox.setAttribute('aria-hidden', 'true');
+    }
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+        if (lightbox.classList.contains('open') && currentGallery.length > 1) {
+            if (e.key === 'ArrowLeft') showLightboxImage(currentIndex - 1);
+            if (e.key === 'ArrowRight') showLightboxImage(currentIndex + 1);
+        }
+    });
+</script>
+
+
+
+</body>
+</html>
