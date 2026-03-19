@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>DE MACEDO Bastien - BTS SIO SISR</title>
+    <link rel="icon" href="images/icon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+<header>
+    <h1>DE MACEDO Bastien</h1>
+    <p>BTS SIO - Option SISR</p>
+</header>
+
+<!-- MENU STICKY -->
+<nav class="navbar">
+    <a href="#presentation">Présentation</a>
+    <a href="#cursus">Cursus</a>
+    <a href="#etablissement">Établissement</a>
+    <a href="#formation">Formation</a>
+    <a href="missions.html">Missions</a>
+    <a href="#stages">Stages</a>
+    <a href="#veille">Veille</a>
+    <a href="#contact">Contact</a>
+    <!--<audio src="audio/Local Forecast.mp3" controls></audio>-->
+    <audio id="bg-audio" src="audio/Local Forecast.mp3" loop></audio>
+    <button id="audio-toggle" class="audio-toggle" aria-label="Lecture / pause">▶</button>
+    <input
+    type="range"
+    id="audio-volume"
+    class="audio-volume"
+    min="0"
+    max="1"
+    step="0.01"
+    value="0.2"
+    />
+</nav>
+
+<!-- MISSIONS -->
+<section id="missions" class="fade-in">
+    <h2>Missions professionnelles</h2>
+
+    <div class="missions-trimestre">
+        <h3>1er trimestre</h3>
+
+        <div class="mission-card">
+            <h4>Recherches métiers / Rédaction CV / Mail motivé / Entretien</h4>
+            <p><strong>Contexte :</strong></p>
+            <p>Liens des métiers de l'informatique, rédaction d'un CV professionnel et mail motivé, passage d'une simulation d'entretien et passage à l'oral/présentation d'une diaporama de présentation individuel (avec les objectifs professionnels)</p>
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+                <li>Organisation de son développement professionnel</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <p>
+                Le côté simulation d'entretien et présentation du diaporame m'a permis d'améliorer ma capacité à m'éxprimer avec aisance à l'oral tandis que le côté rédaction du CV, mail motivé et du diaporama de renforcer mes compétences rédactionnelles ce qui est toujours appréciable.
+            </p>
+        </div>
+
+        <div class="mission-card">
+            <h4>Réponse à un appel d'offres - Renouvellement d'un parc informatique</h4>
+            <p><strong>Contexte :</strong></p>
+            <p>
+                En tant que salarié de l'entreprise IT Partner, vous êtes chargés de la proposition de configurations fixes et portables pour le 
+                renouvellement du parc informatique des salles du BTS SIO au lycée Albert Londres. Seront attendus de vous un devis comprenant les formules requises (calcul TVA, quantitées...) ainsi qu'une lettre 
+                explicative justifiant les choix techniques réalisés. Tout cela envoyé au destinataire par un mail professionellement rédigé.
+            </p>
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+                <li>Gérer le patrimoine informatique</li>
+                <li>Répondre aux incidents et aux demandes d'assistance et d'évolution</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <p>Mon affinité pour la dimension matérielle de l'informatique a rendu cette mission plus simple et je dirais même amusante en essayant de peser le pour et le contre de chaque composant,
+               choisir ceux ayant un rapport perfomance/prix le plus rentable. Cette dernière m'a cependant permis d'avoir une gestion du temps maitrisée pour les missions qui ont suivies.
+            </p>
+        </div>
+
+        <div class="mission-card">
+            <h4>Mise en place d'un réseau poste à poste</h4>
+            <p><strong>Contexte :</strong></p>
+            <p>
+                Encore une fois membre de l'équipe d'IT Partner, vous êtes cette fois chargés de la mise en place d'une service d'authentification dans la base SAM 
+                , de la gestion des utilisateurs/groupes avec les permissions associées, des fichiers et partage sous Windows 10 ainsi que de la rédaction d'une documentation technique (tutoriel) 
+                retraçant les étapes de ce processus de façon détaillée, professionelle et simple à comprendre permettant de reproduire les manipulations effectuées.
+            </p>
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+                <li>Gérer le patrimoine informatique</li>
+                <li>Mettre à disposition des utilisateurs un service informatique</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <ul>
+                <li>Cette mission m'a permis de comprendre le fonctionnement des permissions NTFS et du partage de fichiers/dossiers sous Windows sans oublier l'introduction à la rédaction
+                    de documentation, chose que je n'avais jamais fait auparavant. Cela m'a donc contraint à trouver une approche éfficace (effectuer une manipulation puis je documente et je recommence pour la manipulation suivante).
+                </li>
+            </ul>
+        </div>
+
+        <div class="mission-card">
+            <h4>Réponse à un appel d'offres - Préparation d'une mise en réseau d'une salle</h4>
+            <p><strong>Contexte :</strong></p>
+            <p>
+                Ici, en tant que membre de l'équipe d'IT Partner, vous êtes chargés dans le cadre de la réponse à un autre appel d'offres de la réalisation d'un
+                plan Microsoft Visio d'agancement d'une salle du BTS SIO (tables, postes, prises électriques/réseau, colonnes/goulottes...). Il sera ensuite nécéssaire d'établir un
+                devis comprenant les produits nécéssaires au cablage réseau de ladite salle également reliée à l'armoire de la salle server située à l'autre bout du couloir ainsi qu'une lettre justifiant encore une fois les choix réalisés. 
+
+            </p>
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+                <li>Gérer le patrimoine informatique</li>
+                <li>Répondre aux incidents et aux demandes d'assistance et d'évolution</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <ul>
+                <li>
+                    La création du plan Visio n'était pas compliqué, le défi se situait plutôt autours des mesures, estimation des distances et choix de bobines de cables de longueur
+                    idéale afin d'éviter les pertes le plus possible. Globalement, cette mission m'a permis d'aiguiser ma capacité prendre des décisions éclairées et rentables mais
+                    aussi de mieux visualiser/imaginer un plan en 3 dimensions (notament pour le passage des cables).
+                </li>
+            </ul>
+        </div>
+
+        <div class="mission-card">
+            <h4>Conception, hébergement puis référencement d'un site web</h4>
+            <p><strong>Contexte :</strong></p>
+            <p>Ici, il vous faudra développer un site web "vitrine" autour d'un centre d'intérêt et/ou organisation (l'utilisation de CMS étant proscrite). Ensuite, il faudra comparer, choisir et justifier votre choix d'un hébergeur. Enfin, vous devrez également
+                éffectuer les manipulations/procédures nécéssaires afin de référencer votre site web ainsi que rédiger une note expliquant ces manipulations.   
+            </p>
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+                <li>Développer la présence en ligne de l'organisation</li>
+                <li>Travailler en mode projet</li>
+                <li>Mettre à disposition des utilisateurs un service informatique</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <ul>
+                <li>Cette mission à été étonamment amusante ainsi qu'enrichissante. En effet, mon apréhension concernant la programmation/développement m'a fait croire que cette mission
+                    serait assez compliquée et que le produit final serait très basique. En réalité la prise en main de l'HTML/CSS était assez simple. Cela m'a encouragé à implémenter des fonctionnalités et éléments visuel
+                    plus complexes. Au final, j'ai réussit à créer un produit dont je pouvais être un peu fier malgré mon apréhension.
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="missions-trimestre">
+        <h3>2ᵉ trimestre</h3>
+
+        <div class="mission-card">
+            <h4>Création d'un portfolio</h4>
+            <p><strong>Contexte :</strong></p>
+            <p>
+                Analyse des objectifs, organisation du portfolio sur son fond et sa forme avec une synthèse des missions réalisées. Des mises à jour du portfolio
+                devrons êtres effectuées par la suite (nouvelles missions et stages).
+            </p>
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+                <li>Organiser son développement professionnel</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <ul>
+                <li>
+                    N'ayant jamais réalisé de portfolio auparavant et disposant d'une libertée technique complète (usage de CMS et IA autorisées), cette Mission laisse place à l'imagination
+                    de façon plus prononcée que pour celle concernant la conception d'un site web. Cela a contribué à rendre cette mission encore une fois amusante  
+                </li>
+            </ul>
+        </div>
+
+        <div class="mission-card">
+            <h4>Clé YUMI et gestionnaire de mots de passe</h4>
+            <p><strong>Contexte :</strong></p>
+            <p>
+                Cette fois, vous serez chargés en tant que membre de l'équipe d'IT Partner de la comparaison de plusieurs gestionnaires de mots de passe afin de choisir le meilleur
+                d'entre eux. Cette comparaison prendra la forme d'un document au format texte et sera accompagnée d'un diaporama le résumant. Ensuite, vous devrez également créer
+                un support amorçable YUMI permettant de démarrer divers outils et systèmes d'exploitation dit "Live" conformément aux critères données (distribution linux Live, utilitaire de 
+                clonage et partition, testeur de mémoire vive, antivirus Live, proposition d'installation Windows...). Il faudra bien évidemment rédiger
+                une documentation permettant à n'importe quel utilisateur de créer un support amorçable YUMI.
+            </p>
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+                <li>Mettre à disposition des utilisateurs un service informatique</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <ul>
+                <li>
+                    A déterminer...
+                </li>
+            </ul>
+        </div>
+
+        <div class="mission-card">
+            <h4>Refonte réseau Brocker'info (A déterminer)</h4>
+            <p><strong>Contexte :</strong></p>
+            <p>...
+            </p>
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+                <li>Gérer le patrimoine informatique</li>
+                <li>Répondre aux incidents et aux demandes d'assistance et d'évolution</li>
+                <li>Travailler en mode projet</li>
+                <li>Mettre à disposition des utilisateurs un service informatique</li>
+            </ul>
+            <p><strong>Conclusion :</strong></p>
+            <ul>
+                <li>
+                    A déterminer...
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 - DE MACEDO Bastien - Usage non commercial de « Local Forecast » par Kevin MacLeod sous licence <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons: By Attribution 3.0 License</a> - <a href="https://incompetech.com/">Site de la musique : incompetech.com</a>
+</footer>
+
+<!-- Lightbox : galerie par thème avec prev/next -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Fermer">×</button>
+    <button class="lightbox-prev" aria-label="Image précédente">‹</button>
+    <div class="lightbox-content">
+        <img src="" alt="" class="lightbox-img">
+        <div class="lightbox-caption"></div>
+    </div>
+    <button class="lightbox-next" aria-label="Image suivante">›</button>
+    <div class="lightbox-counter"></div>
+</div>
+
+<script>
+    const audio = document.getElementById('bg-audio');
+    const btn = document.getElementById('audio-toggle');
+    const volumeSlider = document.getElementById('audio-volume');
+    let playing = false;
+
+    // Volume initial (basé sur la valeur du slider)
+    audio.volume = parseFloat(volumeSlider.value || '0.2');
+
+    btn.addEventListener('click', () => {
+        if (!playing) {
+            audio.play();
+            playing = true;
+            btn.textContent = '⏸';
+        } else {
+            audio.pause();
+            playing = false;
+            btn.textContent = '▶';
+        }
+    });
+
+    volumeSlider.addEventListener('input', () => {
+        audio.volume = parseFloat(volumeSlider.value);
+    });
+
+    // Lightbox galerie par thème : clic ouvre la galerie d'images du même thème
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('.lightbox-img');
+    const lightboxClose = lightbox.querySelector('.lightbox-close');
+    const lightboxPrev = lightbox.querySelector('.lightbox-prev');
+    const lightboxNext = lightbox.querySelector('.lightbox-next');
+    const lightboxCounter = lightbox.querySelector('.lightbox-counter');
+
+    let currentGallery = [];
+    let currentTitles = [];
+    let currentIndex = 0;
+    const themeAlt = {};
+
+    function showLightboxImage(index) {
+        if (currentGallery.length === 0) return;
+        currentIndex = (index + currentGallery.length) % currentGallery.length;
+        lightboxImg.src = currentGallery[currentIndex];
+        lightboxImg.alt = themeAlt[currentGallery[currentIndex]] || currentTitles[currentIndex] || 'Image';
+        const captionEl = lightbox.querySelector('.lightbox-caption');
+        captionEl.textContent = currentTitles[currentIndex] || themeAlt[currentGallery[currentIndex]] || '';
+        lightboxCounter.textContent = currentGallery.length > 1
+            ? (currentIndex + 1) + ' / ' + currentGallery.length
+            : '';
+        lightboxPrev.style.display = currentGallery.length > 1 ? 'flex' : 'none';
+        lightboxNext.style.display = currentGallery.length > 1 ? 'flex' : 'none';
+    }
+
+    function initGallery(selector) {
+        document.querySelectorAll(selector).forEach((img) => {
+        img.addEventListener('click', () => {
+            try {
+                currentGallery = JSON.parse(img.getAttribute('data-gallery') || '[]');
+                currentTitles = [];
+                try {
+                    currentTitles = JSON.parse(img.getAttribute('data-gallery-titles') || '[]');
+                } catch (e) {}
+                while (currentTitles.length < currentGallery.length) {
+                    currentTitles.push('');
+                }
+            } catch (e) {
+                currentGallery = [img.src];
+                currentTitles = [img.alt || ''];
+            }
+            if (currentGallery.length === 0) {
+                currentGallery = [img.src];
+                currentTitles = [img.alt || ''];
+            }
+            themeAlt[img.src] = img.alt;
+            currentIndex = currentGallery.indexOf(img.src);
+            if (currentIndex < 0) currentIndex = 0;
+            showLightboxImage(currentIndex);
+            lightbox.classList.add('open');
+            lightbox.setAttribute('aria-hidden', 'false');
+        });
+    });
+    }
+    initGallery('.interests-gallery .gallery-img');
+    initGallery('.etablissement-gallery .gallery-img');
+
+    lightboxPrev.addEventListener('click', (e) => {
+        e.stopPropagation();
+        showLightboxImage(currentIndex - 1);
+    });
+    lightboxNext.addEventListener('click', (e) => {
+        e.stopPropagation();
+        showLightboxImage(currentIndex + 1);
+    });
+    lightboxImg.addEventListener('click', (e) => e.stopPropagation());
+
+    function closeLightbox() {
+        lightbox.classList.remove('open');
+        lightbox.setAttribute('aria-hidden', 'true');
+    }
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+        if (lightbox.classList.contains('open') && currentGallery.length > 1) {
+            if (e.key === 'ArrowLeft') showLightboxImage(currentIndex - 1);
+            if (e.key === 'ArrowRight') showLightboxImage(currentIndex + 1);
+        }
+    });
+</script>
+
+
+
+</body>
+</html>
