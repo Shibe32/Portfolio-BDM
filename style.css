@@ -58,6 +58,7 @@ section {
     background: #d8dbe2;
     border-radius: 16px;            /* coins arrondis */
     box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);  /* léger relief */
+    scroll-margin-top: 90px;
 }
 
 section h2 {
@@ -727,6 +728,10 @@ header {
     border-radius: 8px;
     transition: 0.3s;
     box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+}
+
+.mission-card > :not(.mission-images) {
+    max-width: calc(100% - 230px);
 }
 
 .mission-card:hover {
