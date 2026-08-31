@@ -802,6 +802,7 @@ header {
 }
 
 .stage-card {
+    position: relative;
     background: #a8bcd1;
     padding: 20px;
     margin-top: 10px;
@@ -814,6 +815,68 @@ header {
 
 .stage-card:hover {
     transform: scale(1.02);
+}
+
+.stage-top {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.stage-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.stage-info p:first-child {
+    margin-top: 0;
+}
+
+.stage-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.stage-gallery img {
+    border-top: 5px solid #5a8791d3;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.stage-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.stage-conclusion {
+    margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+    .stage-top {
+        flex-direction: column;
+    }
+
+    .stage-gallery {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .stage-gallery img {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 
