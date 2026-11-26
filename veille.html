@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>DE MACEDO Bastien - Veille technologique</title>
+    <link rel="icon" href="images/icon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+<header>
+    <h1>DE MACEDO Bastien</h1>
+    <p>BTS SIO - Option SISR</p>
+</header>
+
+<!-- MENU STICKY -->
+<nav class="navbar">
+    <a href="index.html#presentation">Présentation</a>
+    <a href="index.html#cursus">Cursus</a>
+    <a href="index.html#etablissement">Établissement</a>
+    <a href="index.html#formation">Formation</a>
+    <div class="dropdown">
+        <a href="missions.html">Missions</a>
+        <div class="dropdown-content">
+          <a href="missions.html#missions-s1">1er semestre</a>
+          <a href="missions.html#missions-s2">2e semestre</a>
+          <a href="missions.html#missions">Toutes les missions</a>
+        </div>
+    </div>
+    <a href="index.html#stages">Stages</a>
+    <a href="veille.html">Veille</a>
+    <a href="index.html#contact">Contact</a>
+    <audio id="bg-audio" src="audio/Local Forecast.mp3" loop></audio>
+    <button id="audio-toggle" class="audio-toggle" aria-label="Lecture / pause">▶</button>
+    <input
+    type="range"
+    id="audio-volume"
+    class="audio-volume"
+    min="0"
+    max="1"
+    step="0.01"
+    value="0.2"
+    />
+</nav>
+
+<!-- INTRO -->
+<section id="intro" class="fade-in veille-hero">
+    <p class="kicker">Veille technologique</p>
+    <h2>La gravure 1&nbsp;nm</h2>
+    <p>Où en est la course aux puces de demain ?</p>
+    <div class="kpis">
+        <div class="kpi"><b>2&nbsp;nm</b><span>Génération actuelle, en production depuis fin 2025</span></div>
+        <div class="kpi"><b>1,4&nbsp;nm</b><span>Prévu en 2028-2029</span></div>
+        <div class="kpi"><b>1&nbsp;nm</b><span>Visé vers 2030, pas encore produit</span></div>
+        <div class="kpi"><b>0,7&nbsp;nm</b><span>Prototype IBM en laboratoire (06/2026)</span></div>
+    </div>
+</section>
+
+<div class="veille-toc">
+    <a href="#methode">Méthode</a>
+    <a href="#gravure">Gravure et « 1&nbsp;nm »</a>
+    <a href="#miniaturiser">Pourquoi miniaturiser</a>
+    <a href="#feuille">Feuille de route</a>
+    <a href="#obstacles">Obstacles et solutions</a>
+    <a href="#adoption">Adoption</a>
+    <a href="#subnm">Sub-1&nbsp;nm</a>
+    <a href="#cependant">Un bon procédé ne suffit pas</a>
+    <a href="#sources">Sources et suivi</a>
+    <a href="#conclusion">Conclusion</a>
+</div>
+
+<!-- DEFINITION -->
+<section id="definition" class="fade-in">
+    <h2><span class="num">1</span>Définition et objectifs</h2>
+    <p>La veille technologique consiste à surveiller les évolutions techniques et les innovations d’un secteur, afin de repérer les tendances, les cycles et les ruptures. Elle permet de s’informer de façon systématique sur les techniques les plus récentes et sur leur mise à disposition commerciale.</p>
+    <div class="veille-grid">
+        <div class="option-box">
+            <h3>Comprendre</h3>
+            <p>Comment les puces progressent : performances, consommation, chaleur.</p>
+        </div>
+        <div class="option-box">
+            <h3>Suivre</h3>
+            <p>Les annonces des fondeurs : TSMC, Samsung, Intel et Rapidus.</p>
+        </div>
+        <div class="option-box">
+            <h3>Anticiper</h3>
+            <p>L’impact sur le matériel que j’administrerai : serveurs, postes, équipements réseau.</p>
+        </div>
+        <div class="option-box">
+            <h3>Vérifier</h3>
+            <p>Apprendre à trier, croiser et dater mes sources.</p>
+        </div>
+    </div>
+    <p>Pourquoi ce thème ? Passionné par le matériel et les dernières technologies, j’ai choisi un sujet qui touche directement mon domaine : la finesse de gravure détermine la puissance, la consommation et la chaleur des processeurs des serveurs et des équipements que l’on installe et maintient en SISR.</p>
+</section>
+
+<!-- METHODE -->
+<section id="methode" class="fade-in">
+    <h2><span class="num">2</span>Ma méthode de veille</h2>
+    <div class="veille-grid">
+        <div class="option-box">
+            <h3>Méthode « pull » : je cherche</h3>
+            <ul>
+                <li>Sites spécialisés : TrendForce, HWCooling, Tom’s Hardware, Digitimes</li>
+                <li>Publications de recherche : IBM Research, imec</li>
+                <li>Moteurs de recherche</li>
+            </ul>
+        </div>
+        <div class="option-box">
+            <h3>Méthode « push » : l’info vient à moi</h3>
+            <ul>
+                <li>Flux RSS</li>
+                <li>Alertes (1&nbsp;nm, A14, A10, High-NA, sub-1&nbsp;nm)</li>
+                <li>Newsletters spécialisées</li>
+            </ul>
+        </div>
+    </div>
+    <div class="veille-grid veille-steps">
+        <div class="option-box">
+            <h3>1. Cibler</h3>
+            <p>Définir le cœur du sujet : gravure 1&nbsp;nm, nœuds A14 et A10, High-NA, sub-1&nbsp;nm.</p>
+        </div>
+        <div class="option-box">
+            <h3>2. Collecter</h3>
+            <p>Rassembler les articles et annonces via mes outils de recherche et d’alerte.</p>
+        </div>
+        <div class="option-box">
+            <h3>3. Analyser</h3>
+            <p>Croiser au moins deux sources, noter la date et la fiabilité.</p>
+        </div>
+        <div class="option-box">
+            <h3>4. Diffuser</h3>
+            <p>Diaporama, fiche explicative et ce portfolio.</p>
+        </div>
+    </div>
+</section>
+
+<!-- GRAVURE -->
+<section id="gravure" class="fade-in">
+    <h2><span class="num">3</span>De la gravure au « 1&nbsp;nm »</h2>
+    <div class="band-tag"><span class="num">1</span>La gravure <small>Comme une photo : on projette un motif, puis on le « développe ».</small></div>
+    <div class="veille-grid">
+        <div class="option-box">
+            <h3>Le wafer</h3>
+            <p>Un disque de silicium très pur, poli comme un miroir.</p>
+        </div>
+        <div class="option-box">
+            <h3>La lumière</h3>
+            <p>Une machine EUV projette le dessin du circuit sur une résine.</p>
+        </div>
+        <div class="option-box">
+            <h3>La gravure</h3>
+            <p>On retire la matière aux endroits exposés.</p>
+        </div>
+    </div>
+    <div class="band-tag"><span class="num">2</span>Le « 1&nbsp;nm » <small>Que veut dire ce chiffre ?</small></div>
+    <div class="veille-grid">
+        <div class="option-box">
+            <h3>Un nom commercial</h3>
+            <p>Les « nm » ne mesurent plus une taille réelle : ils désignent une génération de procédé.</p>
+        </div>
+        <div class="option-box">
+            <h3>Un nœud nommé A10</h3>
+            <p>1&nbsp;nm = 10 ångströms. Chez TSMC, la notation « A » remplace les nanomètres.</p>
+        </div>
+        <div class="option-box">
+            <h3>Après le 2&nbsp;nm</h3>
+            <p>N2 en production depuis décembre 2025, puis A16, A14, A13, A12 et enfin A10.</p>
+        </div>
+    </div>
+    <p class="veille-note">Source : HWCooling / Tom’s Hardware, avril 2026.</p>
+</section>
+
+<!-- MINIATURISER -->
+<section id="miniaturiser" class="fade-in">
+    <h2><span class="num">4</span>Pourquoi miniaturiser ?</h2>
+    <div class="veille-grid">
+        <div class="option-box">
+            <h3>Encombrement</h3>
+            <p>Plus de transistors sur la même surface : des puces plus puissantes ou plus petites.</p>
+        </div>
+        <div class="option-box">
+            <h3>Consommation</h3>
+            <p>Moins d’énergie par opération. Exemple : TSMC N2U annonce 8 à 10&nbsp;% de moins à vitesse égale.</p>
+        </div>
+        <div class="option-box">
+            <h3>Chaleur</h3>
+            <p>Moins d’énergie consommée, c’est moins de chaleur à évacuer, un enjeu clé pour l’intelligence artificielle et les data centers.</p>
+        </div>
+    </div>
+    <p class="veille-note">Mais les gains ralentissent : A13 n’ajoute que 6&nbsp;% de densité par rapport à A14. Source : HWCooling, avril 2026.</p>
+</section>
+
+<!-- FEUILLE DE ROUTE -->
+<section id="feuille" class="fade-in">
+    <h2><span class="num">5</span>Feuille de route des fondeurs</h2>
+    <div class="veille-table-wrap">
+        <table class="veille-table">
+            <thead><tr><th>Fondeur</th><th>Génération 1,4&nbsp;nm</th><th>Génération ~1&nbsp;nm</th></tr></thead>
+            <tbody>
+                <tr><td><strong>TSMC</strong></td><td>A14 en 2028, A13 et A12 en 2029</td><td>A10 en préparation, sans date officielle</td></tr>
+                <tr><td><strong>Samsung</strong></td><td>Production visée en 2029</td><td>Visée vers 2030 (presse)</td></tr>
+                <tr><td><strong>Intel</strong></td><td>14A avec High-NA EUV</td><td>Pas de date confirmée</td></tr>
+                <tr><td><strong>Rapidus</strong></td><td>Production visée vers 2029</td><td>Vise 6 mois d’écart avec TSMC</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="veille-note">Objectifs annoncés ou rapportés par la presse : les dates peuvent encore bouger, et certaines sources évoquent un 1&nbsp;nm dès 2028. Sources : TrendForce (03/2026), HWCooling (04/2026), Digitimes (07/2026).</p>
+</section>
+
+<!-- OBSTACLES -->
+<section id="obstacles" class="fade-in">
+    <h2><span class="num">6</span>Obstacles et solutions techniques</h2>
+    <div class="veille-grid">
+        <div class="option-box">
+            <h3>Fuites de courant</h3>
+            <p>Les transistors sont si petits que le courant passe même « fermé ».</p>
+            <p class="solution">→ GAA, forksheet, CFET</p>
+        </div>
+        <div class="option-box">
+            <h3>Chaleur</h3>
+            <p>Plus de transistors par mm², mais la tension ne descend plus sous ~0,7&nbsp;V.</p>
+            <p class="solution">→ Alimentation par l’arrière</p>
+        </div>
+        <div class="option-box">
+            <h3>Fils trop résistants</h3>
+            <p>Des connexions plus fines chauffent et ralentissent le signal.</p>
+            <p class="solution">→ Ruthénium au lieu du cuivre</p>
+        </div>
+        <div class="option-box">
+            <h3>Lithographie et coût</h3>
+            <p>Motifs plus fins, machines très chères, rendement difficile.</p>
+            <p class="solution">→ EUV, High-NA, nouvelles usines</p>
+        </div>
+    </div>
+    <h3 class="veille-sub">Les technologies en bref</h3>
+    <div class="veille-grid">
+        <div class="option-box">
+            <h3>Transistors GAA</h3>
+            <p>Le courant passe sur les 4 faces du canal. Déjà utilisé au 2&nbsp;nm.</p>
+        </div>
+        <div class="option-box">
+            <h3>Forksheet</h3>
+            <p>Des murs isolants entre transistors gagnent de la place. Rapporté pour le 1&nbsp;nm de Samsung et TSMC.</p>
+        </div>
+        <div class="option-box">
+            <h3>Alimentation par l’arrière</h3>
+            <p>Les lignes d’alimentation passent sous la puce. Intel étudie les deux faces (14A2).</p>
+        </div>
+        <div class="option-box">
+            <h3>Lithographie EUV</h3>
+            <p>TSMC vise A14 à A12 sans High-NA ; Intel l’adopte dès 14A.</p>
+        </div>
+    </div>
+    <p class="veille-note">Sources : imec via Tom’s Hardware et Wccftech, TrendForce, HWCooling, Digitimes (2026).</p>
+</section>
+
+<!-- ADOPTION -->
+<section id="adoption" class="fade-in">
+    <h2><span class="num">7</span>Pourquoi l’adoption est lente</h2>
+    <div class="veille-grid">
+        <div class="option-box">
+            <h3>Rendement</h3>
+            <p>Au début, trop de puces sont défectueuses : il faut des mois pour fiabiliser.</p>
+        </div>
+        <div class="option-box">
+            <h3>Fiabilité</h3>
+            <p>Tests de durée de vie, de chaleur et de tension avant toute vente.</p>
+        </div>
+        <div class="option-box">
+            <h3>Adaptation</h3>
+            <p>Outils et plans de puce à refaire pour chaque nouveau nœud.</p>
+        </div>
+        <div class="option-box">
+            <h3>Coût et capacité</h3>
+            <p>Wafers plus chers et production limitée : Apple aurait réservé environ la moitié du 2&nbsp;nm de TSMC.</p>
+        </div>
+    </div>
+    <p class="veille-note">Résultat : les produits arrivent plusieurs mois à un an après le début de production.</p>
+
+    <h3 class="veille-sub">Un bon procédé ne suffit pas</h3>
+    <div class="veille-grid">
+        <div class="option-box">
+            <h3>Procédé mal appliqué</h3>
+            <p>Snapdragon 8 Gen 1, gravé par Samsung en 4&nbsp;nm : chauffe et consommation élevées. La version 8+ Gen 1, refaite chez TSMC, est plus efficace.</p>
+        </div>
+        <div class="option-box">
+            <h3>Mauvaise architecture</h3>
+            <p>AMD FX (2011, 32&nbsp;nm) : forte consommation, beaucoup de chaleur et des performances décevantes malgré une gravure récente.</p>
+        </div>
+    </div>
+    <p class="veille-note">Le bon résultat demande un bon procédé, une bonne conception et une bonne architecture.</p>
+</section>
+
+<!-- SUB-1NM -->
+<section id="subnm" class="fade-in">
+    <h2><span class="num">8</span>Et après le 1&nbsp;nm ? Le sub-1&nbsp;nm</h2>
+    <div class="veille-table-wrap">
+        <table class="veille-table">
+            <thead><tr><th>Nœud</th><th>Date estimée</th><th>Technologie</th></tr></thead>
+            <tbody>
+                <tr><td><strong>A10 (1&nbsp;nm)</strong></td><td>vers 2031</td><td>Nanosheets avancés</td></tr>
+                <tr><td><strong>A7 (0,7&nbsp;nm)</strong></td><td>vers 2034</td><td>CFET : transistors n et p empilés</td></tr>
+                <tr><td><strong>A5 (0,5&nbsp;nm)</strong></td><td>vers 2036</td><td>CFET améliorés</td></tr>
+                <tr><td><strong>A2 (0,2&nbsp;nm)</strong></td><td>vers 2043</td><td>Transistors 2D (nouveaux matériaux)</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="veille-note">Feuille de route de recherche d’imec (via Wccftech et Tom’s Hardware, 2026).</p>
+    <p>En juin 2026, IBM Research a annoncé un prototype de puce en 0,7&nbsp;nm (architecture « nanostack », transistors empilés en 3D). C’est un résultat de laboratoire, pas une production en série.</p>
+</section>
+
+<!-- Cependant -->
+<section id="cependant" class="fade-in">
+    <h2><span class="num">9</span>Un bon procédé ne suffit pas</h2>
+    <div class="veille-grid">
+        <div class="option-box">
+            <h3>Procédé mal appliqué</h3>
+            <p>
+                <li>Snapdragon 8 Gen 1, gravé par Samsung en 4 nm souffre de chauffe et consommation élevée.</li> 
+                <li>Snapdragon 8+ Gen 1, refaite chez TSMC, est plus efficiente.</li>
+            </p>
+        </div>
+        <div class="option-box">
+            <h3>Mauvaise architecture</h3>
+            <p>AMD série FX (2011, architecture Bulldozer 32 nm) : forte consommation et beaucoup de chaleur pour des performances décevantes malgré une gravure récente et beaucoup de coeurs.</p>
+        </div>
+    </div>
+    <p class="veille-note">Le bon résultat demande un bon procédé, une bonne conception et une bonne architecture.</p>
+</section>
+
+<!-- SOURCES ET SUIVI -->
+<section id="sources" class="fade-in">
+    <h2><span class="num">10</span>Sources et suivi</h2>
+    <h3 class="veille-sub">Mes sources</h3>
+    <div class="veille-table-wrap">
+        <table class="veille-table">
+            <thead><tr><th>Source</th><th>Type</th><th>Fiabilité</th></tr></thead>
+            <tbody>
+                <tr><td><a href="https://research.ibm.com/blog/sub-1nm-node-chips">IBM Research</a></td><td>Constructeur / recherche</td><td>Source primaire, résultat de laboratoire</td></tr>
+                <tr><td>imec (via Wccftech et Tom’s Hardware)</td><td>Centre de recherche</td><td>Feuille de route de recherche, relayée par la presse</td></tr>
+                <tr><td>TrendForce, Digitimes, TechNode</td><td>Presse spécialisée</td><td>Bonne, mais certaines dates sont « rapportées » et à croiser</td></tr>
+                <tr><td>HWCooling, Tom’s Hardware</td><td>Presse spécialisée</td><td>Bonne</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <h3 class="veille-sub">Tableau de suivi</h3>
+    <p>Chaque nouveauté repérée est ajoutée ici, avec sa date, sa source et son niveau de fiabilité. Je poursuis cette veille jusqu’à l’épreuve E5.</p>
+    <div class="veille-table-wrap">
+        <table class="veille-table">
+            <thead><tr><th>Date</th><th>Source</th><th>Information</th><th>Fiabilité</th></tr></thead>
+            <tbody>
+                <tr><td>25/06/2026</td><td>IBM Research</td><td>Prototype de puce en 0,7&nbsp;nm (architecture « nanostack »), en laboratoire</td><td>Source primaire, pas de production en série</td></tr>
+                <tr><td>13/07/2026</td><td>Digitimes</td><td>Intel étudie l’alimentation des deux faces pour son 14A (1,4&nbsp;nm)</td><td>Presse spécialisée</td></tr>
+                <tr><td>19/05/2026</td><td>TechNode</td><td>TSMC prépare une feuille de route 1&nbsp;nm et jusqu’à 12 nouvelles usines</td><td>Presse, information rapportée</td></tr>
+                <tr><td>04/2026</td><td>HWCooling</td><td>TSMC annonce A13 et A12, prévus en 2029</td><td>Presse spécialisée</td></tr>
+                <tr><td>31/03/2026</td><td>TrendForce</td><td>Samsung viserait le 1&nbsp;nm vers 2030, rendement du 2&nbsp;nm supérieur à 60&nbsp;% au mieux</td><td>Presse, information rapportée</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- CONCLUSION -->
+<section id="conclusion" class="fade-in">
+    <h2><span class="num">11</span>Conclusion</h2>
+    <p>Le 1&nbsp;nm n’est pas encore produit en série : les premières puces n’arriveront pas avant ~2030. Un prototype de laboratoire en 0,7&nbsp;nm existe déjà (IBM, juin 2026), mais sa production en série est attendue vers 2034. Le prochain jalon à suivre est le 1,4&nbsp;nm (2028-2029).</p>
+    <p>Pour un technicien SISR, suivre cette évolution aide à comprendre pourquoi le matériel serveur gagne en efficacité énergétique et ce que cela change pour la consommation et le refroidissement d’une infrastructure.</p>
+    <h3 class="veille-sub">Pour aller plus loin</h3>
+    <ul>
+        <li><a href="https://research.ibm.com/blog/sub-1nm-node-chips">IBM Research : la première puce sub-1&nbsp;nm</a> (animations)</li>
+        <li><a href="https://research.ibm.com/blog/why-are-silicon-wafers-round">IBM Research : pourquoi les wafers sont ronds ?</a> (animations)</li>
+    </ul>
+</section>
+
+<footer>
+    © 2026 - DE MACEDO Bastien - Usage non commercial de « Local Forecast » par Kevin MacLeod sous licence <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons: By Attribution 3.0 License</a> - <a href="https://incompetech.com/">Site de la musique : incompetech.com</a> - <a href="index.html">Retour à l’accueil</a>
+</footer>
+
+<script>
+    const audio = document.getElementById('bg-audio');
+    const btn = document.getElementById('audio-toggle');
+    const volumeSlider = document.getElementById('audio-volume');
+    let playing = false;
+
+    audio.volume = parseFloat(volumeSlider.value || '0.2');
+
+    btn.addEventListener('click', () => {
+        if (!playing) {
+            audio.play();
+            playing = true;
+            btn.textContent = '⏸';
+        } else {
+            audio.pause();
+            playing = false;
+            btn.textContent = '▶';
+        }
+    });
+
+    volumeSlider.addEventListener('input', () => {
+        audio.volume = parseFloat(volumeSlider.value);
+    });
+</script>
+
+</body>
+</html>
